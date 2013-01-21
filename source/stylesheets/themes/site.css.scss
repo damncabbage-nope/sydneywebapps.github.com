@@ -1,0 +1,33 @@
+// Palette
+$white-grey: #fafafa;
+$black-grey: #222;
+$dull-red: #9aa;
+
+// Semantic colours
+$body-bg: $white-grey;
+$text-color: $black-grey;
+$primary-color: $dull-red;
+
+
+// Base
+
+body {
+  background-color: $body-bg;
+  color: $text-color;
+}
+
+a {
+  color: $text-color;
+}
+
+
+// Modules
+
+.copy {
+  a:link, a:visited {
+    color: $primary-color;
+  }
+  a:hover, a:active {
+    color: lighten($primary-color, 10%);
+  }
+}

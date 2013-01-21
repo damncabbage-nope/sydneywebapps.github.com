@@ -7,5 +7,15 @@
 // Grid
 *= require "layout/grid"
 
+// Base elements
+*= require "base/fonts"
+*= require "base/global"
+
+// Modules
+*= require "modules/logo"
+*= require "modules/copy"
+
+// Themes
+*= require "themes/site"
 
 */

@@ -8,13 +8,15 @@ $grid-padding   : $gutter-width;
 $break          : 12;
 
 
-.main {
+body > .container {
   @include container($total-columns, $break);
   //@include susy-grid-background;
 }
 
 @include at-breakpoint($break) {
-  .main {
+  /*
+  body > .container {
     //@include susy-grid-background;
   }
+  */
 }

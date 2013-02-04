@@ -19,11 +19,37 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <div role="document" class="container">
 
-    <div role="main" class="main">
-      <%= yield %>
+      <header role="banner">
+        <% link_to('/', {:class => 'logo'}) do %>
+          <div class="galaxy-box">
+            <h1>SWAG</h1>
+          </div>
+          <p class="tagline">Sydney Web Apps Group</p>
+        <% end %>
+      </header>
+
+      <nav role="navigation" class="navigation">
+        <ul>
+          <li><%= link_to 'Upcoming', '/' %></li>
+          <li><%= link_to 'Talks',    '/archive' %></li>
+          <li><%= link_to 'About',    '/about' %></li>
+        </ul>
+      </nav>
+
+      <div role="main">
+        <%= yield %>
+      </div>
+
+      <footer class="footer" role="contentinfo">
+        <h1>Brought to you by</h1>
+        <ul>
+          <li><a href="http://www.bigcommerce.com" class="bigcommerce">Bigcommerce</a></li>
+        </ul>
+      </footer>
+
     </div>
-
     <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" %>
     <script>
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.0.min.js"></'+'script>');

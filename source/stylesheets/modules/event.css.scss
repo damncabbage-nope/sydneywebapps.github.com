@@ -1,0 +1,55 @@
+@import "compass/css3/border-radius";
+
+.event {
+
+  & > hgroup {
+    h1 {
+      margin-left: -0.05em; // Remove glyph padding.
+      margin-bottom: 0.25em;
+      line-height: 1;
+    }
+    time, address {
+      display: block;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.9em;
+      color: #888;
+    }
+  }
+
+  .speakers {
+    & > h1 {
+      font-size: 1.6em;
+      margin-left: -0.05em; // Remove glyph padding.
+      margin-top: 1em;
+      margin-bottom: 0;
+      color: #999;
+    }
+  }
+
+  .talk {
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 2em;
+
+    .photo {
+      position: absolute;
+      display: block;
+      left: 0; top: 0.4em;
+      width: 100px; height: 100px;
+      @include border-radius(50px);
+    }
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0.5em;
+    }
+  }
+
+  aside {
+    font-style: italic;
+  }
+}

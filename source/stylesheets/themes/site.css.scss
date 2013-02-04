@@ -1,19 +1,24 @@
 // Palette
 $white-grey: #fafafa;
+$whiter-grey: #fefefe;
 $black-grey: #222;
 $dull-red: #9aa;
 
 // Semantic colours
-$body-bg: $white-grey;
+$body-bg: $whiter-grey;
 $text-color: $black-grey;
 $primary-color: $dull-red;
 
 
 // Base
+@import "compass/css3/images";
 
 body {
-  background-color: $body-bg;
   color: $text-color;
+  @include background(linear-gradient(top center, darken($body-bg, 3%), $body-bg));
+  background-color: $body-bg;
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 
 a {

@@ -1,4 +1,4 @@
-@import "susy";
+@import "susy"; // http://susy.oddbird.net/
 
 $total-columns  : 7;
 $column-width   : 4em;
@@ -13,6 +13,8 @@ body > .container {
   //@include susy-grid-background;
 }
 
+// Activate resizing; fill out the page as soon
+// as there are 12 columns' worth of space.
 @include at-breakpoint($break) {
   /*
   body > .container {

@@ -17,7 +17,12 @@ body {
   color: $text-color;
   @include background(linear-gradient(top center, darken($body-bg, 3%), $body-bg));
   background-color: $body-bg;
-  background-repeat: no-repeat;
+
+  //background-image: url('http://bradjasper.com/subtle-patterns-bookmarklet/patterns/light_wool.png');
+  //background-image: url('http://bradjasper.com/subtle-patterns-bookmarklet/patterns/daimond_eyes.png');
+  background-image: url('http://bradjasper.com/subtle-patterns-bookmarklet/patterns/furley_bg.png');
+
+  background-repeat: repeat repeat;
   min-height: 100%;
 }
 

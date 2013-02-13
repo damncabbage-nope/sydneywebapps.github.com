@@ -1,24 +1,22 @@
 /**
-
 // HTML5 Boilerplate + Normalize
 *= require "vendor/normalize.css"
 *= require "vendor/html5bp.css"
+*/
 
 // Grid
-*= require "layout/grid"
+@import 'layout/grid';
 
 // Base elements
-*= require "base/fonts"
-*= require "base/global"
+@import 'base/fonts';
+@import 'base/global';
 
 // Modules
-*= require "modules/logo"
-*= require "modules/navigation"
-*= require "modules/copy"
-*= require "modules/event"
-*= require "modules/footer"
+@import 'modules/logo';
+@import 'modules/navigation';
+@import 'modules/copy';
+@import 'modules/event';
+@import 'modules/footer';
 
 // Themes
-*= require "themes/site"
-
-*/
+@import 'themes/site';
